@@ -1,7 +1,9 @@
 :root {
-    --primary: #f58fb2;
-    --secondary: #7ec8e3;
+    --primary: #ff8acb;
+    --secondary: #6ec6ff;
+    --btn: #d71ee2;
     --dark: #1f2937;
+    --services: #ff6f61;
     --light: #f9fafb;
     --gray: #6b7280;
     --radius: 14px;
@@ -59,9 +61,7 @@ header {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: var(--primary);
+    width: 180px;
 }
 
 nav ul {
@@ -109,7 +109,7 @@ textarea:focus {
 
 /* HERO */
 .hero {
-    background: linear-gradient(135deg, rgba(245,143,178,0.6), rgba(126,200,227,0.6)), url('./m&b.jpg');
+    background: linear-gradient(135deg, #ff8aca00, #6ec5ff00), url('./bg.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -118,6 +118,8 @@ textarea:focus {
 
 .hero-content {
     max-width: 650px;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
 }
 
 .hero h1 {
@@ -172,8 +174,12 @@ textarea:focus {
 }
 
 .card h3 {
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 8px;
     margin-bottom: 0.7rem;
-    color: var(--primary);
+    color: white;
+    background-color: var(--services);
 }
 
 /* TESTIMONIALS */
@@ -199,7 +205,7 @@ textarea:focus {
     top: -10px;
     left: 20px;
     font-size: 4rem;
-    color: var(--primary);
+    color: var(--btn);
     opacity: 0.2;
     line-height: 1;
 }
@@ -212,7 +218,7 @@ textarea:focus {
 
 .author strong {
     display: block;
-    color: var(--primary);
+    color: var(--btn);
     font-weight: 600;
 }
 
@@ -421,7 +427,7 @@ footer {
 @media(max-width: 768px){
     .hero h1 { font-size: 2.2rem; }
     .logo {
-        font-size: 14px;
+        width: 120px;
     }
     nav ul { display: none; }
     .nav .btn{
